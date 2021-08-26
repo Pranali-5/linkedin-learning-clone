@@ -53,10 +53,6 @@ our project.
 * ![image](https://user-images.githubusercontent.com/53153822/130081002-05bf27a9-e099-4a4d-88b3-3a209e6e29b0.png)
 
 # Team Members and Contributors
-Ranu Ranjan
-* Github : RanuRanjan
-* Email :  ranuranjan25@gmail.com 
-* Linkedin :https://www.linkedin.com/in/ranuranjan25/
 
 Ankit Kumar
 * Github : ankitkumar3443
