@@ -171,7 +171,6 @@
   margin: 48px 0 16px 0;
   font-size: 56px;
   color: #2977c9;
-  font-weight: 200;
   line-height: 70px;
   font-weight: 200;
 }
@@ -211,6 +210,31 @@
 .blue-button-style:hover {
   background-color: #0558ac;
 }
+
+/* Blue Module media queries */
+@media (max-width: 720px) {
+  #blue-module {
+    height: 300px;
+    background-image: none;
+    margin-top: -90px;
+  }
+  .blue-module-button {
+    font-size: 1000px;
+  }
+  .blue-button-style {
+    width: 150px;
+    font-size: 16px;
+  }
+  .blue-content {
+    max-width: 95%;
+  }
+  .blue-h2 {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 40px;
+  }
+}
+
 /* footer first part */
 
 .footer1_link-column {

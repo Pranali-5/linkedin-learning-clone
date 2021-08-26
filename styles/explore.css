@@ -48,6 +48,7 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  z-index: 2;
   /* margin: 0 20px; */
 }
 #search {
@@ -95,6 +96,7 @@ body {
   position: absolute;
   left: 85px;
   top: 9px;
+  z-index: -1;
   /* color: #666; */
 }
 #freeTrail:hover {
@@ -224,14 +226,6 @@ body {
   }
   .hero__content {
     width: 100%;
-  }
-  #blue-module {
-    background-image: none;
-  }
-  .blue-button-style {
-    /* display: block; */
-    width: 150px;
-    font-size: 16px;
   }
   .circle-module-button {
     /* display: block; */
