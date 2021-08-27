@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lynda</title>
+    <link rel="stylesheet" href="../../static/styles/homeSection.css" />
+    <link rel="stylesheet" href="../../static/styles/explore.css" />
+    <link rel="shortcut icon" href="../../static/ImageBase/linkedin.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="fullBody">
+      <div class="nav">
+        <div>
+          <div class="logo">
+            <img
+              class="logoImg"
+              src="https://image.flaticon.com/icons/png/128/174/174857.png"
+            />
+            <span>LEARNING</span>
+          </div>
+          <div class="searchBar">
+            <div class="searchBar1">
+              <select id="navSelectSearch">
+                <option value="Learning">Learning</option>
+                <option value="Jobs">Jobs</option>
+                <option value="People">People</option>
+              </select>
+              <span class="downArrow">▼</span>
+            </div>
+            <div class="searchBar2">
+              <span class="navSelect learningSelect">
+                <input
+                  type="text"
+                  placeholder="Search skills, subjects, or software"
+                />
+              </span>
+              <span class="navSelect personSelect">
+                <input
+                  class="firstName firstInput"
+                  type="text"
+                  placeholder="Firstname"
+                />
+                <input class="lastname" type="text" placeholder="Lastname" />
+              </span>
+              <span class="navSelect jobSelect">
+                <input
+                  class="jobSearch firstInput"
+                  type="text"
+                  placeholder="Search job titles or companies"
+                />
+                <input class="city" type="text" placeholder="Bangalore" />
+              </span>
+            </div>
+            <div>
+              <a href="allCourses.html">
+              <img
+                id="search"
+                src="https://cdn4.iconfinder.com/data/icons/popular-ui/24/04_ui_user_interface_search_magnifying_glass_web_ios-512.png"
+              /></a>
+            </div>
+          </div>
+          <img
+            class="profilePic"
+            src="https://static-exp1.licdn.com/sc/h/244xhbkr7g40x6bsu4gi6q4ry"
+          />
+          <div class="signInUpButton">
+            <button id="freeTrail">Start free trail</button>
+            <button id="signIn">Sign in</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero_section">
+        <div class="hero__content">
+          <h1 class="hero__headline">
+            Keep learning in the moments that matter
+          </h1>
+
+          <h2 class="hero__subtitle">
+            <a class="hero__link highlight">Subjects</a>
+            and
+            <a class="hero__link highlight" id="coursesRed">courses</a>
+            for every step of your career. Instructors with real-world
+            experience.
+          </h2>
+          <a class="hero__button hero__button-primary"> Start my free month </a>
+
+          <a class="hero__button hero__button-muted"> Buy for my team </a>
+        </div>
+        <div class="heroImg">
+          <img
+            src="https://static-exp1.licdn.com/sc/h/dxf91zhqd2z6b0bwg85ktm5s4"
+          />
+        </div>
+      </div>
+      <!--to be removed -->
+      <div class="explore-courses">
+        <div class="section-tab">
+          <div class="trending">
+            <div id="explore-courses_heading"><h2>Explore courses</h2></div>
+            <div class="explore-courses_heading-nav wid">
+              <ul class="tabs_list">
+                <li class="tab">
+                  <button class="tab-button current-tab">All courses</button>
+                </li>
+                <li class="tab">
+                  <button class="tab-button">Business</button>
+                </li>
+                <li class="tab">
+                  <button class="tab-button">Technology</button>
+                </li>
+                <li class="tab">
+                  <button class="tab-button">Creative</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending courseSection">
+          <div class="trending-courses">
+            <div class="nav-heading highlight">TRENDING COURSES</div>
+            <div class="arrow">
+              <button class="back1">
+                <img
+                  src="https://www.bing.com/rp/2d9PT4vq6Wgwkp7HP8R-0W7C1K0.svg"
+                />
+              </button>
+              <button class="forward1">
+                <img
+                  src="https://www.bing.com/rp/R1dUsywBSe_0cXxtsfENVYupgkY.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="courses courses1"></div>
+        </div>
+        <!-- Mahipal Add_on -->
+        <div class="trending frc_container popularTopics">
+            <div class="popular_topics_container">
+              <div class="frcfu_cont">
+                  <div><p id="p_heading" >Find the right course for you</p></div>
+                <!-- <div> <p id="P_para">
+                  Choose from over <a onclick="redirectLearningHomePage()" class="hgh_lte1" >16,900 courses</a> and
+                  <a  onclick="redirectLearningHomePage()" class="hgh_lte1">Learning Paths</a>, dozens added each week.
+                </p></div> -->
+                <div> <p id="P_para">
+                  Choose from over <a class="hgh_lte1 highlight " >16,900 courses</a> and
+                  <a class="hgh_lte1 highlight ">Learning Paths</a>, dozens added each week.
+                </p></div>
+               
+              </div>
+              <div class="pt">
+                <p>POPULAR TOPICS</p>
+                <p id="btns_less_more">
+                  <button class="redir_btn1 hgh_lte1" >Job Searching</button>
+                  <button class="redir_btn1 hgh_lte1" >Spreadsheets</button>
+                  <button class="redir_btn1 hgh_lte1" >Motion Graphics</button>
+                  <button class="redir_btn1 hgh_lte1" >Personal Branding</button>
+                  <button class="redir_btn1 hgh_lte1" >Data Analysis</button>
+                  <button class="redir_btn1 hgh_lte1" >Visual Effects</button>
+                  <button class="redir_btn1 hgh_lte1" >Personal Effectiveness</button>
+                  <button class="redir_btn1 hgh_lte1" >Internet of Things</button>
+                  
+                  <p id="more" class="hidden_buttons">
+                    <button class="redir_btn1 hgh_lte1" >Video Editing</button>
+                    <button class="redir_btn1 hgh_lte1" >Carrer Management</button>
+                    <button class="redir_btn1 hgh_lte1" >Electrical Engineering</button>
+                    <button class="redir_btn1 hgh_lte1" >Compositing</button>
+                    <button class="redir_btn1 hgh_lte1" >Entrepreneurship</button>
+                    <button class="redir_btn1 hgh_lte1" >Programing Languages</button>
+                    <button class="redir_btn1 hgh_lte1" >Video Post-Production</button>
+                  </p>
+                </p>
+                <!-- <button clas="redir_btn_less" onclick="myFunction(event)" id="show_more_btn">Show more</button> -->
+                <button clas="redir_btn_less highlight" id="show_more_btn">Show more</button>
+
+              </div>
+            </div>
+        </div>
+        <div class="trending courseSection">
+          <div class="trending-courses">
+            <div class="nav-heading highlight">
+              TRENDING JOB SEARCHING COURSES
+            </div>
+            <div class="arrow">
+              <a class="seeAll" href="allCourses">See all</a>
+              <button class="back2">
+                <img
+                  src="https://www.bing.com/rp/2d9PT4vq6Wgwkp7HP8R-0W7C1K0.svg"
+                />
+              </button>
+              <button class="forward2">
+                <img
+                  src="https://www.bing.com/rp/R1dUsywBSe_0cXxtsfENVYupgkY.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="courses courses2"></div>
+        </div>
+        <div class="trending courseSection">
+          <div class="trending-courses">
+            <div class="nav-heading highlight">
+              TRENDING SPREADSHEETS COURSES
+            </div>
+            <div class="arrow">
+              <a class="seeAll" href="allCourses">See all</a>
+              <button class="back3">
+                <img
+                  src="https://www.bing.com/rp/2d9PT4vq6Wgwkp7HP8R-0W7C1K0.svg"
+                />
+              </button>
+              <button class="forward3">
+                <img
+                  src="https://www.bing.com/rp/R1dUsywBSe_0cXxtsfENVYupgkY.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="courses courses3"></div>
+        </div>
+        <div class="proveYourSkills trending">
+          <div id="gif-section">
+            <div class="gif-block">
+              <img
+                class="gif-img"
+                src="https://static-exp1.licdn.com/sc/h/b1fxwht7hdbeusleja7ciftsj"
+                alt=""
+              />
+            </div>
+            <div class="gif-block">
+              <img
+                class="gif-img"
+                src="https://static-exp1.licdn.com/sc/h/dkfub4sc7jgzg3o31flfr91rv"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="gif-section">
+            <div class="gif-block">
+              <div class="gif-heading">
+                <h2 class="gif-h1">Prove your skills</h2>
+              </div>
+              <div class="gif-para">
+                <p class="gif-p">
+                  Earn certificates to add to your LinkedIn profile.
+                </p>
+              </div>
+            </div>
+
+            <div class="gif-block">
+              <div class="gif-heading">
+                <h2 class="gif-h1">Learn on your time</h2>
+              </div>
+              <div class="gif-para">
+                <p class="gif-p">
+                  Watch bite-sized videos or in-depth courses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trending courseSection">
+          <div class="trending-courses">
+            <div class="nav-heading highlight">
+              TRENDING VIDEO EDITING COURSES
+            </div>
+            <div class="arrow">
+              <a class="seeAll" href="allCourses">See all</a>
+              <button class="back4">
+                <img
+                  src="https://www.bing.com/rp/2d9PT4vq6Wgwkp7HP8R-0W7C1K0.svg"
+                />
+              </button>
+              <button class="forward4">
+                <img
+                  src="https://www.bing.com/rp/R1dUsywBSe_0cXxtsfENVYupgkY.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="courses courses4"></div>
+        </div>
+        <div class="trending courseSection">
+          <div class="trending-courses">
+            <div class="nav-heading highlight">
+              TRENDING SHORT VIDEO TUTORIALS
+            </div>
+            <div class="arrow">
+              <a class="seeAll" href="allCourses">See all</a>
+              <button class="back5">
+                <img
+                  src="https://www.bing.com/rp/2d9PT4vq6Wgwkp7HP8R-0W7C1K0.svg"
+                />
+              </button>
+              <button class="forward5">
+                <img
+                  src="https://www.bing.com/rp/R1dUsywBSe_0cXxtsfENVYupgkY.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="courses courses5"></div>
+        </div>
+        <div class="trending courseSection">
+          <div class="trending-courses">
+            <div class="nav-heading highlight">
+              TRENDING COMPOSITING COURSES
+            </div>
+            <div class="arrow">
+              <a class="seeAll "href="allCourses">See all</a>
+              <button class="back6">
+                <img
+                  src="https://www.bing.com/rp/2d9PT4vq6Wgwkp7HP8R-0W7C1K0.svg"
+                />
+              </button>
+              <button class="forward6">
+                <img
+                  src="https://www.bing.com/rp/R1dUsywBSe_0cXxtsfENVYupgkY.svg"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="courses courses6"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div id="circle-module">
+          <div class="circle-blocks circle-content">
+            <div>
+              <h2 class="circle-content-h2">Drive business impact</h2>
+              <h3 class="circle-module__subheading">
+                Get access to courses for your
+                <a class="circle-module-a" href="">business</a>,
+                <a class="circle-module-a" href="">higher education</a>, or
+                <a class="circle-module-a" href="">government</a> <br />
+                team
+              </h3>
+              <div class="circle-button-div">
+                <a class="circle-module-button hero__button-muted">
+                  Buy for my team</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="circle-blocks">
+            <div class="circle-img-blocks">
+              <img
+                class="circle-img"
+                src="https://static-exp1.licdn.com/sc/h/e5e46mbehmrq92n30enduib0j"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="blue-module">
+          <div class="blue-content">
+            <h2 class="blue-h2">
+              Learn from industry experts, and connect with a global network of
+              experience
+            </h2>
+            <p class="blue-p">On your time. How and when you want.</p>
+            <div class="blue-button">
+              <div class="circle-button-div">
+                <a
+                  class="circle-module-button blue-button-style"
+                  href="./productsmahi1.html"
+                >
+                  Start my free month</a
+                >
+                <a class="circle-module-button hero__button-muted" >
+                  Buy for my team</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="footer1_linkster--gray">
+          <div class="footer1_linkster__container">
+            <!-- Explore Business Topics 1st column-->
+            <div class="footer1_link-column">
+              <h3 class="footer1_link-column__title">
+                Explore Business Topics
+              </h3>
+              <ul class="footer1_link-column__list">
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Business Analysis and Strategy
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Business Software and Tools
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Career Development </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Customer Service </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Finance and Accounting
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Human Resources </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Leadership and Management
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Marketing </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Professional Development
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Project Management </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Sales </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Small Business and Entrepreneurship
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Training and Education
+                  </a>
+                </li>
+              </ul>
+
+              <a class="footer1_link-column__general-link"> See all </a>
+            </div>
+
+            <!-- Explore Creative Topics 2nd column-->
+
+            <div class="footer1_link-column">
+              <h3 class="footer1_link-column__title">
+                Explore Creative Topics
+              </h3>
+              <ul class="footer1_link-column__list">
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> AEC </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Animation and Illustration
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Audio and Music </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Graphic Design </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Motion Graphics and VFX
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Photography </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Product and Manufacturing
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> User Experience </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Video </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Visualization and Real-Time
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Web Design </a>
+                </li>
+              </ul>
+
+              <a class="footer1_link-column__general-link" > See all </a>
+            </div>
+
+            <!-- Explore Technology Topics 3rd column-->
+
+            <div class="footer1_link-column">
+              <h3 class="footer1_link-column__title">
+                Explore Technology Topics
+              </h3>
+              <ul class="footer1_link-column__list">
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Cloud Computing </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Data Science </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Database Management </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> DevOps </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> IT Help Desk </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Mobile Development </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Network and System Administration
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Security </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link">
+                    Software Development
+                  </a>
+                </li>
+                <li class="footer1_link-column__item">
+                  <a class="footer1_link-column__link"> Web Development </a>
+                </li>
+              </ul>
+
+              <a class="footer1_link-column__general-link" > See all </a>
+            </div>
+          </div>
+        </section>
+
+        <div id="Directory-section">
+          <div class="directory-section-img">
+            <img class="directory-logo" src="../../static/ImageBase/Screenshot_2.jpg" alt="" />
+          </div>
+          <div class="directory-links">
+            <div class="directory-links-blocks">
+              <p class="directory-p">General</p>
+              <ul style="list-style-type: none" class="directory-a">
+                <li><a href="">Sign Up</a></li>
+                <li><a href="">Help Center</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Developers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="directory-links">
+            <div class="directory-links-blocks">
+              <p class="directory-p">Browse LinkedIn</p>
+              <ul style="list-style-type: none" class="directory-a">
+                <li><a href="">Learning</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Salary</a></li>
+                <li><a href="">Mobile</a></li>
+                <li><a href="">Services</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="directory-links">
+            <div class="directory-links-blocks">
+              <p class="directory-p">Business Solutions</p>
+              <ul style="list-style-type: none" class="directory-a">
+                <li><a href="">Talent</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">Learning</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="directory-links">
+            <div class="directory-links-blocks">
+              <p class="directory-p">Directories</p>
+              <ul style="list-style-type: none" class="directory-a">
+                <li><a href="">Members</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Companies</a></li>
+                <li><a href="">Salaries</a></li>
+                <li><a href="">Featured</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Interview Prep</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Schools</a></li>
+                <li><a href=""> Learning</a></li>
+                <li><a href=""> Services</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footBar">
+          <div><img src="../../static/ImageBase/Screenshot_2.jpg"> </div>
+          <div>&copy;2021 </div>
+          <div>About</div>
+          <div>Accessibility</div>
+          <div>User Agreement</div>
+          <div>Privacy Policy</div>
+          <div>Cookie Policy</div>
+          <div>Copyright Policy</div>
+          <div>Brand Policy</div>
+          <div>Guest Control</div>
+          <div>Community Guidelines</div>
+          <div>Language &#9660;</div>
+        </div>
+      </div>
+     
+    </div>
+    <script type="text/javascript" src="../../static/scripts/dummyDataBase.js"></script>
+    <script type="text/javascript" src="../../static/scripts/explore.js"></script>
+  </body>
+</html>

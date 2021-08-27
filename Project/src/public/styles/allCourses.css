@@ -1,0 +1,172 @@
+.sortFunc {
+  max-width: 1230px;
+  margin: auto;
+  margin-top: 70px;
+  position: relative;
+}
+.preMain ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.preMain li {
+  list-style: none;
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: rgba(102, 102, 102, 0.918);
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.sortFunc > ul li {
+  border: 1px solid rgba(102, 102, 102, 0.472);
+  margin-right: 5px;
+}
+.solution {
+  background-color: #f3f6f8;
+  position: relative;
+}
+.solution ul {
+  justify-content: flex-end;
+  max-width: 1165px;
+  margin: auto;
+  padding: 4px 0;
+}
+.solution li:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.numOfResults {
+  margin: 25px 0;
+  color: #666;
+}
+.columnDisplay .courses {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  /* background-color: yellow; */
+}
+.columnDisplay .courses > div {
+  border-radius: 5px;
+  padding: 15px 5px;
+}
+.columnDisplay .courses > div:hover {
+  background-color: rgba(102, 102, 102, 0.075);
+}
+.columnDisplay .courseDuration {
+  position: absolute;
+  margin-top: 118px;
+  margin-left: 195px;
+}
+.courseImg {
+  float: left;
+  margin-right: 20px;
+}
+.jobSearch {
+  margin-bottom: -50px;
+}
+.jobSearch h2 {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.trending > div {
+  overflow: hidden;
+}
+#courseDisplay {
+  width: 73%;
+  float: left;
+  margin-left: 10px;
+}
+#stickyNote {
+  float: right;
+  width: 230px;
+  padding: 23px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px #666;
+  color: #666;
+  margin-top: 20px;
+}
+.stickyNoteButton {
+  margin: 25px 0;
+}
+.stickyNoteButton > a {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #0a66c2;
+  color: #0a66c2;
+}
+.stickyNote4Sort {
+  box-shadow: none !important;
+  display: none;
+}
+.stickyNote4Sort h2 {
+  font-weight: 400;
+}
+.stickyNote4Sort li {
+  list-style: none;
+  padding: 3px 10px;
+  border: 1px solid #666;
+  margin-top: 5px;
+  border-radius: 28px;
+  width: fit-content;
+}
+.stickyNote4Sort li:hover {
+  background-color: #f3f6f8;
+  cursor: pointer;
+}
+.joinNow {
+  margin: 45px 0px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.joinNowBut {
+  margin-top: 25px;
+  padding: 10px 25px;
+  background-color: #0a66c2;
+  color: #f3f6f8;
+  border-radius: 28px;
+  text-decoration: none;
+}
+.footer {
+  height: 30vh;
+}
+@media (max-width: 1155px) {
+  #courseDisplay {
+    width: 100%;
+  }
+  #stickyNote {
+    display: none !important;
+  }
+}
+
+/* sort tab */
+.sortPopTab {
+  background-color: #f3f6f8;
+  box-shadow: 0.5px 0.5px 10px #666;
+  /* height: 200px; */
+  width: 200px;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+  /* top: 0%; */
+  left: 5%;
+  z-index: 40;
+  padding: 1px 5px;
+}
+
+.sortPopTab > ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+  /* margin-top: 10px; */
+}
+#doneButton {
+  border: none;
+  background-color: #0a66c2;
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 28px;
+}

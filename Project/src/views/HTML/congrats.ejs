@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <link rel="shortcut icon" href="../../static/ImageBase/linkedin.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../static/styles/congrats.css">
+</head>
+<body>
+    
+    <div id="container">
+        <div id="bg-circles">
+            <div id="circle-1"></div>
+            <div id="circle-2"></div>
+            <div id="circle-3"></div>
+        </div>
+        <h1 id="title">Congratulations 🎊</h1>
+        <p class="conf-text">
+            Thank you for your interest in the LinkedIn Learning.Your Payment has been recevied. You should recevie a confirmation email shortly. Click on continue to start learning
+        </p>
+        <button id="btn-continue" onclick="allcheckout(event)">Continue</button>
+    </div>
+</body>
+</html>
+<script>
+    function allcheckout(e) {
+        e.preventDefault();
+                window.location.href = 'allCourses'
+    }
+</script>
+

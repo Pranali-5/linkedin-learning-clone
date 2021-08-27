@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+      body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+          Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+          sans-serif;
+      }
+
+      .frc_container {
+        height: 700px;
+        width: 1500px;
+        
+        
+      }
+      .popular_topics_container {
+        height: 90%;
+        width: 80%;
+       
+        margin: auto;
+       display: flex;
+      
+      }
+      .popular_topics_container > div {
+        height: 95%;
+       
+        
+        display: inline-block;
+        margin: 1%;
+        
+      }
+      .frcfu_cont {
+        width: 30%;
+        
+      }
+      .pt {
+        width: 60%;
+      }
+      #p_heading {
+        font-size: 44px;
+       
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+
+        font-weight: lighter;
+        
+      }
+      #P_para {
+        font-size: 20px;
+      }
+      .hgh_lte1 {
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+      }
+#btns_less_more>button , .hidden_buttons>button{
+    height: 50px;
+    border-radius: 22px;
+    margin:1%;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+background-color:#EBEBEB ;
+color:#5E5E5E;
+padding: 10px;
+
+}
+#show_more_btn{
+    height: 30px;
+    border: none;
+}
+
+#more{
+    display: none;
+}
+a:hover{
+  border-bottom: 2px solid black;
+}
+.redir_btn:hover{
+  background-color: rgb(211, 211, 212) !important;
+}
+.redir_btn1:hover{
+  background-color: rgb(211, 211, 212) !important;
+}
+.redir_btn_less:hover{
+  background-color: rgb(211, 211, 212) !important;
+}
+    </style>
+  </head>
+  <body>
+    <div class="frc_container">
+      <div class="popular_topics_container">
+        <div class="frcfu_cont">
+            <div><p id="p_heading" >Find the right course for you</p></div>
+          <div> <p id="P_para">
+            Choose from over <a onclick="redirectLearningHomePage()" class="hgh_lte1" >16,900 courses</a> and
+            <a  onclick="redirectLearningHomePage()" class="hgh_lte1">Learning Paths</a>, dozens added each week.
+          </p></div>
+         
+        </div>
+        <div class="pt">
+          <p>POPULAR TOPICS</p>
+          <p id="btns_less_more">
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Job Searching</button>
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Spreadsheets</button>
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Motion Graphics</button>
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Personal Branding</button>
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Data Analysis</button>
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Visual Effects</button>
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Personal Effectiveness</button>
+            <button class="redir_btn1" onclick="redirectLearningHomePage()">Internet of Things</button>
+            
+            <p id="more" class="hidden_buttons">
+              <button class="redir_btn" onclick="redirectLearningHomePage()">Video Editing</button>
+              <button class="redir_btn" onclick="redirectLearningHomePage()">Carrer Management</button>
+              <button class="redir_btn" onclick="redirectLearningHomePage()">Electrical Engineering</button>
+              <button class="redir_btn" onclick="redirectLearningHomePage()">Compositing</button>
+              <button class="redir_btn" onclick="redirectLearningHomePage()">Entrepreneurship</button>
+              <button class="redir_btn" onclick="redirectLearningHomePage()">Programing Languages</button>
+              <button class="redir_btn" onclick="redirectLearningHomePage()">Video Post-Production</button>
+            </p>
+          </p>
+          <button clas="redir_btn_less" onclick="myFunction(event)" id="show_more_btn">Show more</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+    function myFunction(e){
+      e.preventDefault();
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("show_more_btn");
+       
+        if(more.style.display === "none"){
+            btnText.innerHTML = "Show less";
+            moreText.style.display = "unset";
+        }else{
+            btnText.innerHTML = "Show more";
+            moreText.style.display = "none";
+        }
+    }
+  function redirectLearningHomePage(){
+    window.location.href = ""; // add the link of learnig page (Ankit add your learning page link here )
+  }
+</script>
