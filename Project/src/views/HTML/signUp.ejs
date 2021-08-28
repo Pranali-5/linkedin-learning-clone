@@ -79,19 +79,23 @@
     </div>
   </body>
   <script type="module">
-
-     import showAlert from "../../app.js"
-    // let name = document.getElementById("signIn")
-    // function login() {
-    //   let name = document.getElementById("name_").value
-    //   let password = document.getElementById("password").value
-    //   let data = JSON.parse(localStorage.getItem("logindata"))
-    //   if (data.name == name && data.password == password) {
-    //     console.log(data)
-    //     window.location.href = "checkout.html"
-    //   } else alert("Please Enter Right Details")
-    // }
-      document.body.innerHTML=showAlert();
+    import useremail from "../../../app.js" ;
+    console.log(useremail);
+    let name = document.getElementById("signIn")
+    function login() {
+      let name = document.getElementById("name_").value
+      let password = document.getElementById("password").value
+      const Register = require("../../models/registers.model.js");
+      console.log(name,password,Register);
+      const Register = require("../../models/registers.model.js");
+      const useremail = await Register.findOne({ email: name });
+      console.log(useremail);
+      if (data.name == name && data.password == password) {
+        
+      } else {
+        alert("Please Enter Right Details")
+      }
+    }
 
   </script>
 </html>
