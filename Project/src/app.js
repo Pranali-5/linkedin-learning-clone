@@ -16,10 +16,9 @@ console.log(__dirname);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.get("/index", async (req, res) => {
+app.get(["/index","/index.html"], async (req, res) => {
   res.render("HTML/index");
 });
-
 app.get("/signUp", async (req, res) => {
   res.render("HTML/signUp");
 });
@@ -92,10 +91,19 @@ app.get("/congrats", async function (req, res) {
   res.render("HTML/congrats");
 });
 
-app.get("/allCourses", async function (req, res) {
+app.get(["/allCourses","/allCourses.html"], async function (req, res) {
   return res.render("HTML/allCourses", {
     firstName: e,
   });
+});
+
+// const Re = require("./public/scripts/dummyDataBase");
+const test = require("./models/courses.model.js");
+//  console.log(test);
+
+app.get("/test", async function (req, res) {
+  const users = await test.find({tag:`${req.query.tag}`}).lean().exec();
+  return res.json(users)
 });
 
 app.listen(port, async () => {

@@ -73,6 +73,24 @@ let courses1 = document.querySelector(".courses1");
 let hero_section = document.querySelector(".hero_section");
 let nav = document.querySelector(".nav");
 
+
+//data loaded
+let courses = document.querySelectorAll(".courses");
+let tag, forW, bacK;
+courses.forEach(async (el, i) => {
+  if (el.classList.contains("courses1")) tag='allcourses';
+  else if (el.classList.contains("courses2")) tag='creative';
+  else if (el.classList.contains("courses3")) tag='business';
+  else if (el.classList.contains("courses4")) tag='trendingJob';
+  else if (el.classList.contains("courses5")) tag='trendingSpreadSheet';
+  else tag='trendingJob';
+  forW = document.querySelector(`.forward${i + 1}`);
+  bacK = document.querySelector(`.back${i + 1}`);
+  mainLoader(tag , el);
+  scrollX(el, forW, bacK);
+});
+
+
 tabs_list?.addEventListener("click", function tabs_list_selector(e) {
   if (e.target.classList.contains("tab-button")) {
     //Showing Current Tab
@@ -80,13 +98,13 @@ tabs_list?.addEventListener("click", function tabs_list_selector(e) {
     e.target.classList.add("current-tab");
 
     if (e.target.textContent == "Business") {
-      mainLoader(coursesData.businessCourses, courses1);
+      mainLoader('business', courses1);
     } else if (e.target.textContent == "Technology") {
-      mainLoader(coursesData.technologyCourses, courses1);
+      mainLoader('technology', courses1);
     } else if (e.target.textContent == "Creative") {
-      mainLoader(coursesData.creativeCourses, courses1);
+      mainLoader('creative', courses1);
     } else {
-      mainLoader(coursesData.allCourses, courses1);
+      mainLoader('allcourses', courses1);
     }
   }
 });
@@ -96,34 +114,11 @@ window.addEventListener("scroll", () => {
   else nav.style.boxShadow = "none";
 });
 
-//Courses Add
 
-let courses = document.querySelectorAll(".courses");
-let cXYZ, forW, bacK;
-courses.forEach((el, i) => {
-  if (el.classList.contains("courses1")) {
-    cXYZ = coursesData.allCourses;
-  } else if (el.classList.contains("courses2")) {
-    cXYZ = coursesData.trendingJobCourses;
-  } else if (el.classList.contains("courses3")) {
-    cXYZ = coursesData.trendingSpreadSheetCourses;
-  } else if (el.classList.contains("courses4")) {
-    cXYZ = coursesData.technologyCourses;
-  } else if (el.classList.contains("courses5")) {
-    cXYZ = coursesData.businessCourses;
-  } else {
-    cXYZ = coursesData.creativeCourses;
-  }
-  forW = document.querySelector(`.forward${i + 1}`);
-  bacK = document.querySelector(`.back${i + 1}`);
-  mainLoader(cXYZ, el);
-  scrollX(el, forW, bacK);
-});
 
-// src="${'/tumb.jpg'}" // if img access denied
-
-function mainLoader(arr, appendto) {
-  // console.log(appendto);
+async function mainLoader(tag, appendto) {
+  let arr=await fetch(`http://localhost:3000/test/?tag=${tag}`);
+  arr=await arr.json();
   appendto.innerHTML = "";
   let x;
   (n = arr.length), (s = arr);
