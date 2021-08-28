@@ -6,6 +6,7 @@ const connect = require("./db/conn.js");
 const checkoutController = require("./controllers/checkout.controller");
 const Register = require("./models/registers.model.js");
 
+
 const port = process.env.PORT || 3000;
 app.use("/checkout", checkoutController);
 app.use(express.json());
