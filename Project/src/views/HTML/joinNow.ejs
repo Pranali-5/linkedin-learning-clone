@@ -85,19 +85,18 @@
   </body>
 </html>
 <script>
-  // function checkoutsignIn(e) {
-  //   let name1= document.getElementById("name").value
-  //   let name = document.getElementById("name_").value
-  //   let password = document.getElementById("password").value
-  //   let confPassword = document.getElementById("confPassword").value
-  //   if (name && password && confPassword) {
-  //       let loginData={name,password}
-  //       if(password === confPassword){
-  //           localStorage.setItem("logindata", JSON.stringify(loginData));
-  //           alert("Account Created Sucessfully")
-  //       }
-  //       else
-  //       alert("Please Enter valid Details")
-  //   }   
-  // }
+  function checkoutsignIn(e) {
+    let name1= document.getElementById("name").value
+    let name = document.getElementById("name_").value
+    let password = document.getElementById("password").value
+    let confPassword = document.getElementById("confPassword").value
+    if (name && password && confPassword) {
+        let loginData={name,password}
+        if(password === confPassword){
+            alert("Account Created Sucessfully")
+        }
+        else
+        alert("Please Enter valid Details")
+    }   
+  }
 </script>
