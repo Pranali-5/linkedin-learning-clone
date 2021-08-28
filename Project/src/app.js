@@ -24,7 +24,7 @@ app.get("/signUp", async (req, res) => {
   res.render("HTML/signUp");
 });
 
-app.get("/productsmahi1", async (req, res) => {
+app.get(["/productsmahi1.html","/productsmahi1"], async (req, res) => {
   res.render("HTML/productsmahi1");
 });
 
@@ -97,6 +97,14 @@ app.get(["/allCourses","/allCourses.html"], async function (req, res) {
   return res.render("HTML/allCourses", {
     firstName: e,
   });
+});
+
+//loading a Course content
+app.get("/course", async function (req, res) {
+  // const users = await courses.find({tag:`${req.query.tag}`,id:`${req.query.id}`}).lean().exec();
+  //return res.json(users);
+  // res.send(req.query)
+  return res.render("HTML/course")
 });
 
 //sending courses data

@@ -76,3 +76,4 @@ if (localStorage.getItem("sortData")) {
   document.querySelector(".stickyNote4Sort").style.display = "unset";
   localStorage.removeItem("sortData");
 }
+

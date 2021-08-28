@@ -35,18 +35,18 @@ signIn?.addEventListener("click", () => (window.location.href = "signUp"));
 let coursesRed = document.getElementById("coursesRed");
 coursesRed?.addEventListener(
   "click",
-  () => (window.location.href = "allCourses")
+  () => (window.location.href = "/allCourses")
 );
 
 let buyForTeam = document.querySelectorAll(".hero__button-muted");
 buyForTeam?.forEach((el) =>
-  el?.addEventListener("click", () => (window.location.href = "contact"))
+  el?.addEventListener("click", () => (window.location.href = "/contact"))
 );
 
 let startFreeMonth = document.querySelector(".hero__button-primary");
 startFreeMonth?.addEventListener(
   "click",
-  () => (window.location.href = "productsmahi1")
+  () => (window.location.href = "/productsmahi1")
 );
 
 //NavBar
@@ -90,6 +90,14 @@ courses.forEach(async (el, i) => {
   scrollX(el, forW, bacK);
 });
 
+courses.forEach(el => el.addEventListener('click',(e)=>{
+  let temp=e.target.closest(".courseContent");
+  if(!temp) return;
+  //console.log(e.target.closest(".courseContent"));
+  // console.log(temp.id,temp.dataset.tag,e.target);
+  window.location.href = `course/?tag=${temp.dataset.tag}&id=${temp.id}`
+
+}))
 
 tabs_list?.addEventListener("click", function tabs_list_selector(e) {
   if (e.target.classList.contains("tab-button")) {
@@ -126,7 +134,7 @@ async function mainLoader(tag, appendto) {
   for (let i = 0; i < n; i++) {
     time = Math.random();
     // if ((time * 4) > 1) time * 4.toFixed(0)
-    x = `<div id="${s[i].id}" data-tag=${tag}>
+    x = `<div id="${s[i].id}" class=courseContent data-tag=${tag}>
         <div class="courseImg">
         <img
           src="${s[i].src}"
