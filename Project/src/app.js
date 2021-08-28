@@ -6,7 +6,6 @@ const connect = require("./db/conn.js");
 const checkoutController = require("./controllers/checkout.controller");
 const Register = require("./models/registers.model.js");
 
-
 const port = process.env.PORT || 3000;
 app.use("/checkout", checkoutController);
 app.use(express.json());
@@ -17,7 +16,7 @@ console.log(__dirname);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.get(["/index","/index.html"], async (req, res) => {
+app.get(["/index", "/index.html"], async (req, res) => {
   res.render("HTML/index");
 });
 app.get("/signUp", async (req, res) => {
@@ -49,9 +48,7 @@ app.post("/joinNow", (req, res) => {
       const reg_users = users.save();
       res.render("HTML/signUp");
     } else {
-      
-      //return alert("password not matching");
-      res.render("HTML/joinNow");
+
     }
     // res.render();
   } catch (err) {
@@ -71,15 +68,9 @@ app.post("/login", async (req, res) => {
         firstName: useremail.firstName,
       });
     } else {
-      window.onload = function () {};
     }
   } catch (err) {
-    function showAlert() {
-      alert("Hello world!");
-    }
-    module.exports = showAlert;
-    alert("invalid");
-    res.status(400).send("Invalid");
+
   }
 });
 
@@ -93,7 +84,11 @@ app.get("/congrats", async function (req, res) {
   res.render("HTML/congrats");
 });
 
-app.get(["/allCourses","/allCourses.html"], async function (req, res) {
+app.get("/contact", async function (req, res) {
+  res.render("HTML/contact");
+});
+
+app.get(["/allCourses", "/allCourses.html"], async function (req, res) {
   return res.render("HTML/allCourses", {
     firstName: e,
   });
@@ -103,9 +98,18 @@ app.get(["/allCourses","/allCourses.html"], async function (req, res) {
 const courses = require("./models/courses.model.js");
 
 app.get("/test", async function (req, res) {
+
+  const users = await test
+    .find({ tag: `${req.query.tag}` })
+    .lean()
+    .exec();
+  return res.json(users);
   const users = await courses.find({tag:`${req.query.tag}`}).lean().exec();
   return res.json(users)
+
 });
+
+function check(useremail) {}
 
 app.listen(port, async () => {
   await connect();
