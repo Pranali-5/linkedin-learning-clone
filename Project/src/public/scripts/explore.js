@@ -17,48 +17,36 @@ function myFunction(e) {
 
 // Redirection
 let logo = document.querySelector(".logo");
-logo?.addEventListener(
-  "click",
-  () => (window.location.href = "../HTML/index.html")
-);
+logo?.addEventListener("click", () => (window.location.href = "index"));
 
 let hgh_lte1 = document.querySelectorAll(".hgh_lte1");
 let freeTrail = document.getElementById("freeTrail");
 hgh_lte1?.forEach((el) =>
-  el.addEventListener(
-    "click",
-    () => (window.location.href = "../HTML/allCourses.html")
-  )
+  el.addEventListener("click", () => (window.location.href = "allCourses"))
 );
 freeTrail?.addEventListener(
   "click",
-  () => (window.location.href = "../HTML/productsmahi1.html")
+  () => (window.location.href = "productsmahi1")
 );
 
 let signIn = document.getElementById("signIn");
-signIn?.addEventListener(
-  "click",
-  () => (window.location.href = "./signUp.html")
-);
+signIn?.addEventListener("click", () => (window.location.href = "signUp"));
 
 let coursesRed = document.getElementById("coursesRed");
 coursesRed?.addEventListener(
   "click",
-  () => (window.location.href = "../HTML/allCourses.html")
+  () => (window.location.href = "allCourses")
 );
 
 let buyForTeam = document.querySelectorAll(".hero__button-muted");
 buyForTeam?.forEach((el) =>
-  el?.addEventListener(
-    "click",
-    () => (window.location.href = "../HTML/contact.html")
-  )
+  el?.addEventListener("click", () => (window.location.href = "contact"))
 );
 
 let startFreeMonth = document.querySelector(".hero__button-primary");
 startFreeMonth?.addEventListener(
   "click",
-  () => (window.location.href = "../HTML/productsmahi1.html")
+  () => (window.location.href = "productsmahi1")
 );
 
 //NavBar

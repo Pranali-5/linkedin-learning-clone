@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALL Courses</title>
-    <link rel="stylesheet" href="../styles/explore.css" />
-    <link rel="stylesheet" href="../styles/allCourses.css" />
-    <link rel="stylesheet" href="../styles/homeSection.css" />
-    <link rel="shortcut icon" href="../ImageBase/linkedin.png" type="image/x-icon" />
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="../../static/styles/explore.css" />
+    <link rel="stylesheet" href="../../static/styles/allCourses.css" />
+    <link rel="stylesheet" href="../../static/styles/homeSection.css" />
+    <link rel="shortcut icon" href="../../static/ImageBase/linkedin.png" />
   </head>
   <body>
     <div class="nav">
@@ -67,7 +67,7 @@
         <div class="signInUpButton">
           
           
-          <button id="signIn"></button>
+          <button id="signIn"><%= firstName %></button>
         </div>
       </div>
     </div>
@@ -329,7 +329,7 @@
 
       <div id="Directory-section">
         <div class="directory-section-img">
-          <img class="directory-logo" src="../ImageBase/Screenshot_2.jpg" alt="" />
+          <img class="directory-logo" src="../../static/ImageBase/Screenshot_2.jpg" alt="" />
         </div>
         <div class="directory-links">
           <div class="directory-links-blocks">
@@ -389,7 +389,7 @@
       </div>
 
       <div class="footBar">
-        <div><img src="../ImageBase/Screenshot_2.jpg" /></div>
+        <div><img src="../../static/ImageBase/Screenshot_2.jpg" /></div>
         <div>&copy;2021</div>
         <div>About</div>
         <div>Accessibility</div>
@@ -405,15 +405,15 @@
     </div>
   </body>
   <!-- <script src="./navbar.js"></script> -->
-  <script type="text/javascript" src="../scripts/dummyDataBase.js"></script>
-  <script type="text/javascript" src="../scripts/explore.js"></script>
-  <script type="text/javascript" src="../scripts/allCoursesSort.js"></script>
+  <script type="text/javascript" src="../../static/scripts/dummyDataBase.js"></script>
+  <script type="text/javascript" src="../../static/scripts/explore.js"></script>
+  <script type="text/javascript" src="../../static/scripts/allCoursesSort.js"></script>
 </html>
-<script>
+<!-- <script>
   var name1 = document.getElementById("signIn");
   var loginData=localStorage.getItem("logindata");
   var data = JSON.parse(loginData);
   console.log(data.name);
 
   name1.innerHTML=data.name;
-</script>
+</script> -->

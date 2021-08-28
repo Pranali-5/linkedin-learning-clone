@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
   <!--Payment Page-->
-  <title>Checkout Pge</title>
-
   <link rel="shortcut icon" href="./ImageBase/linkedin.png" type="image/x-icon" />
   <style>
-        body {
+      body {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
           Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
           Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
@@ -326,11 +324,11 @@
   .footBar img {
     filter: grayscale(100%);
   }
-
   </style>
   <title>Checkout Page</title>
-  <link rel="shortcut icon" href="./linkedin.png" type="image/x-icon" />
-  <body style="background-color: #f3f2ef !important">
+  <link rel="shortcut icon" href="../../static/ImageBase/linkedin.png" type="image/x-icon" />
+ 
+  <body style="height:500px;background-color: #f3f2ef !important">
     <div id="fullContent">
         <div id="checkout_nav">
 
@@ -366,29 +364,32 @@
             </svg>
             <div id="settings-dropdown"  style="display: none" class="show"></div>
         </div>
+        <div onclick="body2()">
         <div id="checkout_1stblock">
             <div id="checkout_1stblock_banner1">Learning Premium Subscription</div>
-            <div id="checkout_1stblock_banner2">Pranali, start your <strong>1-month free trial</strong> now!</div>
+            <div id="checkout_1stblock_banner2"><%= firstName%>, start your <strong>1-month free trial</strong> now!</div>
         </div>
-        <div id="checkout_2ndblock">
-            <div id="checkout_circle">1</div>
-            <div id="checkout_circle1_text1">Confirm your billing cycle</div>
-            <div id="checkout_circle1_text2">Select annual to<strong> save 39% </strong> expense with a <strong>single receipt</strong>.</div>
-            <div id="checkout_2ndblock1" onclick="billing1()">
-                            <dl>
-                                <dt class="option-header">Monthly</dt>
-                                <dd class="option-subheader">1-month free trial </dd>
-                                <dd class="option-total">then ₹1,900.00 / month</dd>
-                            </dl>
+        <div id="checkout_2ndbox">
+            <div id="checkout_2ndblock">
+                <div id="checkout_circle">1</div>
+                <div id="checkout_circle1_text1">Confirm your billing cycle</div>
+                <div id="checkout_circle1_text2">Select annual to<strong> save 39% </strong> expense with a <strong>single receipt</strong>.</div>
+                <div id="checkout_2ndblock1" onclick="billing1()">
+                                <dl>
+                                    <dt class="option-header">Monthly</dt>
+                                    <dd class="option-subheader">1-month free trial </dd>
+                                    <dd class="option-total">then ₹1,900.00 / month</dd>
+                                </dl>
+                </div>
+                <div id="checkout_2ndblock2" onclick="billing2()">
+                    <dl>
+                        <dt class="option-header">Annual</dt>
+                        <dd class="option-subheader highlight-discount-label">1-month free trial <div id="save39">Save 39%</div></dd>
+                        <dd class="option-total" style="padding: 0%;">then ₹1,150.00 / month (₹13,800.00 annually)</dd>
+                    </dl>
+                </div>
             </div>
-            <div id="checkout_2ndblock2" onclick="billing2()">
-                <dl>
-                    <dt class="option-header">Annual</dt>
-                    <dd class="option-subheader highlight-discount-label">1-month free trial <div id="save39">Save 39%</div></dd>
-                    <dd class="option-total" style="padding: 0%;">then ₹1,150.00 / month (₹13,800.00 annually)</dd>
-                </dl>
-            </div>
-
+        </div>
             <div id="checkout_2ndblock4">
                 <div id="checkout_circle">2</div>
                 <div id="checkout_2ndblock41">Payment</div>
@@ -403,37 +404,38 @@
                     <hr style="border: 1px solid rgb(231, 227, 227);">   
                     <br>
                     <form id="checkout_form">
-                        <label>First name*</label><br>
+                        <label>First name<span style="color:#0a66c2">*</span></label><br>
                         <input  type="text" ><br>
-                        <label>Last name*</label><br>
+                        <label>Last name<span style="color:#0a66c2">*</span></label><br>
                         <input  type="text" ><br>
-                        <label>Credit or debit card number*</label><br>
+                        <label>Credit or debit card number<span style="color:#0a66c2">*</span></label><br>
                         <input  type="text" ><br>
                         <div id="checkout_exp">
-                        <label >Expiration date*</label><br>
+                        <label >Expiration date<span style="color:#0a66c2">*</span></label><br>
                         <input  type="text" placeholder="MM/YY"></div>
                         
-                        <div id="checkout_sec">
-                        <label>Security code*</label><br>
+                        <div id="checkout_sec" class="col-auto">
+                        <label>Security code<span style="color:#0a66c2">*</span></label><br>
                         <input  type="text" ></div>
                        <br>
-                        <label id="contact_form_countrylabel">Country*</label><br>
+                        <label id="contact_form_countrylabel">Country<span style="color:#0a66c2">*</span></label><br>
                         <select>
                         <option>India</option>
                         </select>
                         <br>
                         <div id="checkout_pos">
-                        <label>Postal code*</label><br>
+                        <label>Postal code<span style="color:#0a66c2">*</span></label><br>
                         <input type="text"><br></div>
                         <div id="checkout_gst">
                         <label>GST</label><br>
-                        <input type="text"><br></div>
+                        <input type="text" placeholder="Optional"><br></div>
                         <br>
                         
                     </form>
                     <button id="checkout_form_submit" onclick="videopage(event)">Start My Free Trial</button>
                 </div>
             </div>
+          </div>
         </div>
     </div>
 
@@ -446,7 +448,7 @@
     </div>
 
     <div class="footBar">
-      <div><img src="./ImageBase/Screenshot_2.jpg"> </div>
+      <div><img src="../../static/ImageBase/Screenshot_2.jpg"> </div>
       <div>&copy;2021 </div>
       <div>About</div>
       <div>Accessibility</div>
@@ -462,19 +464,27 @@
   </body>
 </html>
 <script>
-  var div = document.getElementById("settings-dropdown")
+  var div = document.getElementById("settings-dropdown");
+  var c=0;
 
   //function for setting button to show sign out box.
   function show() {
     if (div.style.display === "none") {
       div.style.display = "block"
       div.innerHTML = `<div id="settings-dropdown1" class="box arrow-top"><div id="settings_signout" onclick="window.location.href='index.html'">Sign out</div><div>`
-    } else {
+    }
+    else {
       div.style.display = "none"
-      //div.innerHTML = `<div id="settings-dropdown1" class="box arrow-top"><a>Sign out</a><div>`
+       //div.innerHTML = `<div id="settings-dropdown1" class="box arrow-top"><a>Sign out</a><div>`
     }
   }
-
+  function body2(){
+    console.log("test");
+    if(div.style.display !== "none"){
+      div.style.display = "none"
+    }
+     
+  }
   var div1 = document.getElementById("checkout_2ndblock1")
   var div2 = document.getElementById("checkout_2ndblock2")
 
@@ -493,6 +503,6 @@
   function videopage(e) {
     e.preventDefault()
     setTimeout(() =>{fullContent.style.display='none',overLay.style.display='unset'}, 2000);
-    setTimeout(() => (window.location.href = "congrats.html"), 3000);
+    setTimeout(() => (window.location.href = "congrats"), 3000);
   }
 </script>

@@ -68,7 +68,7 @@ function sort_tab() {
   let v = document.querySelector('input[name="radio"]:checked').value;
   localStorage.setItem("sortData", v);
   console.log(localStorage.getItem("sortData"));
-  window.location.href = "../HTML/allCourses.html";
+  window.location.href = "allCourses";
 }
 if (localStorage.getItem("sortData")) {
   courseHide.forEach((el) => (el.innerHTML = ``));
