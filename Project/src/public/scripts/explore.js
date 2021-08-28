@@ -126,7 +126,7 @@ async function mainLoader(tag, appendto) {
   for (let i = 0; i < n; i++) {
     time = Math.random();
     // if ((time * 4) > 1) time * 4.toFixed(0)
-    x = `<div id="${s[i].id}">
+    x = `<div id="${s[i].id}" data-tag=${tag}>
         <div class="courseImg">
         <img
           src="${s[i].src}"

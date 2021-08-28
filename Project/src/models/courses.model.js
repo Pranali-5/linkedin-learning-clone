@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const userSchema = new mongoose.Schema(
+const course_Schema = new mongoose.Schema(
   {
     id: Number,
     src: String,
@@ -15,5 +15,5 @@ const userSchema = new mongoose.Schema(
 //we will tell mongoose to create that collection inside mongodb with the given schema and
 // also create a model that will allow us to interact with mongodb easily
 
-const test = mongoose.model("allcourses", userSchema);
-module.exports = test;
+const courses = mongoose.model("allcourses", course_Schema);
+module.exports = courses;

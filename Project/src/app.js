@@ -48,6 +48,7 @@ app.post("/joinNow", (req, res) => {
       const reg_users = users.save();
       res.render("HTML/signUp");
     } else {
+
     }
     // res.render();
   } catch (err) {
@@ -69,7 +70,7 @@ app.post("/login", async (req, res) => {
     } else {
     }
   } catch (err) {
-    console.log(err);
+
   }
 });
 
@@ -93,16 +94,19 @@ app.get(["/allCourses", "/allCourses.html"], async function (req, res) {
   });
 });
 
-// const Re = require("./public/scripts/dummyDataBase");
-const test = require("./models/courses.model.js");
-//  console.log(test);
+//sending courses data
+const courses = require("./models/courses.model.js");
 
 app.get("/test", async function (req, res) {
+
   const users = await test
     .find({ tag: `${req.query.tag}` })
     .lean()
     .exec();
   return res.json(users);
+  const users = await courses.find({tag:`${req.query.tag}`}).lean().exec();
+  return res.json(users)
+
 });
 
 function check(useremail) {}
