@@ -107,11 +107,6 @@ const courses = require("./models/courses.model.js");
 
 app.get("/test", async function (req, res) {
 
-  const users = await test
-    .find({ tag: `${req.query.tag}` })
-    .lean()
-    .exec();
-  return res.json(users);
   const users = await courses.find({tag:`${req.query.tag}`}).lean().exec();
   return res.json(users)
 
