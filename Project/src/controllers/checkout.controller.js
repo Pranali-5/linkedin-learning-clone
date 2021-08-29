@@ -7,9 +7,9 @@ router.get("", async (req, res) => {
   return res.render("lyndapay/payment.ejs");
 });
 router.post("", async (req, res) => {
-  let exp = req.body.exp + "";
 
-  console.log(req.body.postal + "");
+
+
   let c_num = req.body.card_number + "";
   let postal = req.body.postal + "";
   if (c_num.length == 16 && postal.length == 6) {
@@ -32,7 +32,5 @@ router.post("", async (req, res) => {
   }
 });
 
-function showAlert() {
-  alert("fill the correct details");
-}
+
 module.exports = router;
