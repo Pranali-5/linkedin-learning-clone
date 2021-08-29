@@ -1,3 +1,4 @@
+/* updated css for popular topics*/
 .popular_topics_container {
   display: flex;
 }
@@ -57,6 +58,79 @@
 #show_more_btn:hover {
   background-color: rgb(211, 211, 212);
   cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  .popular_topics_container {
+    display: grid;
+  }
+  .frcfu_cont {
+    width: 100%;
+  }
+  .pt {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .popular_topics_container {
+    display: flex;
+  }
+  .popular_topics_container > div {
+    height: 95%;
+
+    display: inline-block;
+    margin: 1%;
+  }
+  .frcfu_cont {
+    width: 30%;
+  }
+  .pt {
+    width: 60%;
+  }
+  #p_heading {
+    font-size: 44px;
+
+    font-weight: lighter;
+  }
+  #P_para {
+    font-size: 20px;
+  }
+  .hgh_lte1 {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #btns_less_more > button,
+  .hidden_buttons > button {
+    height: 50px;
+    border-radius: 22px;
+    margin: 1%;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #ebebeb;
+    color: #5e5e5e;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+  .redir_btn:hover {
+    background-color: rgb(211, 211, 212) !important;
+  }
+  .redir_btn1:hover {
+    background-color: rgb(211, 211, 212) !important;
+  }
+  #show_more_btn {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+  }
+  #show_more_btn:hover {
+    background-color: rgb(211, 211, 212);
+    cursor: pointer;
+  }
 }
 
 /* gif section */
