@@ -61,6 +61,7 @@
 
 /* gif section */
 
+/* gif section  updated css for responsiveness*/
 #gif-section {
   display: flex;
 }
@@ -85,6 +86,41 @@
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.9);
 }
+@media screen and (min-width: 480px) {
+  #gif-section {
+    display: grid;
+  }
+  .gif-block {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 850px) {
+  #gif-section {
+    display: flex;
+  }
+  .gif-block {
+    width: 50%;
+  }
+  .gif-img {
+    width: 312px;
+    height: 312px;
+  }
+
+  .gif-h1 {
+    font-size: 48px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .gif-p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
 
 /* Circle section */
 
