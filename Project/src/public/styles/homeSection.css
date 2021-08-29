@@ -202,7 +202,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   max-width: 1128px;
   min-height: 840px;
@@ -211,6 +211,7 @@
 
 .circle-blocks {
   width: 50%;
+  /* display: none; */
 }
 .circle-content {
   background-color: rgb(250, 249, 247);
@@ -267,6 +268,15 @@
   padding-left: 100px !important;
 }
 
+/* circular Module media queries */
+@media (max-width: 600px) {
+  .circle-img-blocks{
+    display: none;
+  }
+  .circle-button-div {
+    margin-top: -15px;
+  }
+}
 /* Blue Module */
 
 #blue-module {
@@ -274,7 +284,7 @@
   height: 600px;
 }
 .blue-content {
-  max-width: 85%;
+  max-width: 1200px;
   margin: auto;
 }
 .blue-h2 {
