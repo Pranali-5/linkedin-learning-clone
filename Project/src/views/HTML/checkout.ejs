@@ -501,8 +501,20 @@
   let overLay = document.getElementById("overLay");
 
   function videopage() {
-    //e.preventDefault()
-    setTimeout(() =>{fullContent.style.display='none',overLay.style.display='unset'}, 2000);
+    let first_name = document.getElementById("fname").value;
+    let last_name = document.getElementById("lname").value;
+    let card_number = document.getElementById("cardnum").value;
+    let exp = document.getElementById("expd").value;
+    let sec_code = document.getElementById("sec_cod").value;
+    let postal = document.getElementById("postal").value;
+    let gst=document.getElementById("gsta").value;
+    let country = document.getElementById("countryn").value;
+    console.log(first_name, last_name, card_number, sec_code);
+ if(card_number.length== 16 && postal.length == 6 && sec_code.length == 3){
+  setTimeout(() =>{fullContent.style.display='none',overLay.style.display='unset'}, 2000);
     setTimeout(() => (window.location.href = "congrats"), 3000);
+ }else{
+   alert("Please fill the correct details");
+ }
   }
 </script>
