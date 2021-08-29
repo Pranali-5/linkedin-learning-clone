@@ -1,3 +1,4 @@
+/* updated css for popular topics*/
 .popular_topics_container {
   display: flex;
 }
@@ -58,9 +59,83 @@
   background-color: rgb(211, 211, 212);
   cursor: pointer;
 }
+@media screen and (min-width: 480px) {
+  .popular_topics_container {
+    display: grid;
+  }
+  .frcfu_cont {
+    width: 100%;
+  }
+  .pt {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .popular_topics_container {
+    display: flex;
+  }
+  .popular_topics_container > div {
+    height: 95%;
+
+    display: inline-block;
+    margin: 1%;
+  }
+  .frcfu_cont {
+    width: 30%;
+  }
+  .pt {
+    width: 60%;
+  }
+  #p_heading {
+    font-size: 44px;
+
+    font-weight: lighter;
+  }
+  #P_para {
+    font-size: 20px;
+  }
+  .hgh_lte1 {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #btns_less_more > button,
+  .hidden_buttons > button {
+    height: 50px;
+    border-radius: 22px;
+    margin: 1%;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #ebebeb;
+    color: #5e5e5e;
+    padding: 10px;
+  }
+
+  #more {
+    display: none;
+  }
+  .redir_btn:hover {
+    background-color: rgb(211, 211, 212) !important;
+  }
+  .redir_btn1:hover {
+    background-color: rgb(211, 211, 212) !important;
+  }
+  #show_more_btn {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+  }
+  #show_more_btn:hover {
+    background-color: rgb(211, 211, 212);
+    cursor: pointer;
+  }
+}
 
 /* gif section */
 
+/* gif section  updated css for responsiveness*/
 #gif-section {
   display: flex;
 }
@@ -85,6 +160,41 @@
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.9);
 }
+@media screen and (min-width: 480px) {
+  #gif-section {
+    display: grid;
+  }
+  .gif-block {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 850px) {
+  #gif-section {
+    display: flex;
+  }
+  .gif-block {
+    width: 50%;
+  }
+  .gif-img {
+    width: 312px;
+    height: 312px;
+  }
+
+  .gif-h1 {
+    font-size: 48px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  .gif-p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
 
 /* Circle section */
 
