@@ -1,343 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Courses</title>
-    <!-- <link rel="stylesheet" href="../../static/styles/explore.css" /> -->
-    <!-- <link rel="stylesheet" href="../../static/styles/allCourses.css" /> -->
-    <!-- <link rel="stylesheet" href="../../static/styles/homeSection.css" /> -->
-    <link rel="stylesheet" href="../../static/styles/course.css" />
-    <link rel="shortcut icon" href="../../static/ImageBase/linkedin.png" />
-  </head>
-  <body>
-    <div class="nav">
-      <div>
-        <div class="logo">
-          <img
-            class="logoImg"
-            src="https://image.flaticon.com/icons/png/128/174/174857.png"
-          />
-          <span>LEARNING</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Courses</title>
+  <!-- <link rel="stylesheet" href="../../static/styles/explore.css" /> -->
+  <!-- <link rel="stylesheet" href="../../static/styles/allCourses.css" /> -->
+  <!-- <link rel="stylesheet" href="../../static/styles/homeSection.css" /> -->
+  <link rel="stylesheet" href="../../static/styles/course.css" />
+  <link rel="shortcut icon" href="../../static/ImageBase/linkedin.png" />
+</head>
+
+<body>
+  <div class="nav">
+    <div>
+      <div class="logo">
+        <img class="logoImg" src="https://image.flaticon.com/icons/png/128/174/174857.png" />
+        <span>LEARNING</span>
+      </div>
+      <div class="searchBar">
+        <div class="searchBar1">
+          <select id="navSelectSearch">
+            <option value="Learning">Learning</option>
+            <option value="Jobs">Jobs</option>
+            <option value="People">People</option>
+          </select>
+          <span class="downArrow">▼</span>
         </div>
-        <div class="searchBar">
-          <div class="searchBar1">
-            <select id="navSelectSearch">
-              <option value="Learning">Learning</option>
-              <option value="Jobs">Jobs</option>
-              <option value="People">People</option>
-            </select>
-            <span class="downArrow">▼</span>
-          </div>
-          <div class="searchBar2">
-            <span class="navSelect learningSelect">
-              <input
-                type="text"
-                placeholder="Search skills, subjects, or software"
-              />
-            </span>
-            <span class="navSelect personSelect">
-              <input
-                class="firstName firstInput"
-                type="text"
-                placeholder="Firstname"
-              />
-              <input class="lastname" type="text" placeholder="Lastname" />
-            </span>
-            <span class="navSelect jobSelect">
-              <input
-                class="jobSearch firstInput"
-                type="text"
-                placeholder="Search job titles or companies"
-              />
-              <input class="city" type="text" placeholder="Bangalore" />
-            </span>
-          </div>
-          <div>
-            <a href="/allCourses.html">
-            <img
-              id="search"
-              src="https://cdn4.iconfinder.com/data/icons/popular-ui/24/04_ui_user_interface_search_magnifying_glass_web_ios-512.png"
-            /></a>
-          </div>
+        <div class="searchBar2">
+          <span class="navSelect learningSelect">
+            <input type="text" placeholder="Search skills, subjects, or software" />
+          </span>
+          <span class="navSelect personSelect">
+            <input class="firstName firstInput" type="text" placeholder="Firstname" />
+            <input class="lastname" type="text" placeholder="Lastname" />
+          </span>
+          <span class="navSelect jobSelect">
+            <input class="jobSearch firstInput" type="text" placeholder="Search job titles or companies" />
+            <input class="city" type="text" placeholder="Bangalore" />
+          </span>
         </div>
-        <img
-          class="profilePic"
-          src="https://static-exp1.licdn.com/sc/h/244xhbkr7g40x6bsu4gi6q4ry"
-        />
-        <div class="signInUpButton">
-          
-          
-          <button id="signIn">SignINNN</button>
+        <div>
+          <a href="/allCourses.html">
+            <img id="search"
+              src="https://cdn4.iconfinder.com/data/icons/popular-ui/24/04_ui_user_interface_search_magnifying_glass_web_ios-512.png" /></a>
         </div>
       </div>
+      <img class="profilePic" src="https://static-exp1.licdn.com/sc/h/244xhbkr7g40x6bsu4gi6q4ry" />
+      <div class="signInUpButton">
+
+
+        <button id="signIn">SignINNN</button>
+      </div>
     </div>
-    <div class="solution">
-      <ul>
-        <li>
-          <span id="solFor">Solution for:</span>
-        </li>
-        <li>
-          <span id="business">Business</span>
-        </li>
-        <li>
-          <span id="highEdu">Higher Education</span>
-        </li>
-        <li>
-          <span id="govt">Government</span>
-        </li>
-        <li>
-          <span id="buyForTeam">Buy for my team</span>
-        </li>
-      </ul>
-    </div>
-    <div class="main" style="height: 50vh;">
-
-    </div>
-    <div class="footer">
-      <section class="footer1_linkster--gray">
-        <div class="footer1_linkster__container">
-          <!-- Explore Business Topics 1st column-->
-          <div class="footer1_link-column">
-            <h3 class="footer1_link-column__title">Explore Business Topics</h3>
-            <ul class="footer1_link-column__list">
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Business Analysis and Strategy
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Business Software and Tools
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Career Development </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Customer Service </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Finance and Accounting
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Human Resources </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Leadership and Management
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Marketing </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Professional Development
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Project Management </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Sales </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Small Business and Entrepreneurship
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Training and Education
-                </a>
-              </li>
-            </ul>
-
-            <a class="footer1_link-column__general-link"> See all </a>
+  </div>
+  <div class="solution">
+    <ul>
+      <li>
+        <span id="solFor">Solution for:</span>
+      </li>
+      <li>
+        <span id="business">Business</span>
+      </li>
+      <li>
+        <span id="highEdu">Higher Education</span>
+      </li>
+      <li>
+        <span id="govt">Government</span>
+      </li>
+      <li>
+        <span id="buyForTeam">Buy for my team</span>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="main-1">
+      <div class="origin">
+        From the Course: <b>Career Advice from Some of the Biggest NAmes in Business</b>
+      </div>
+      <div class="post_main">
+        <img src="https://www.beaulieulandscapes.com/wp-content/uploads/2020/03/IMG_0415-website--1024x683.jpg"
+          alt="tumbnail">
+        <div class="post_main-content">
+          <h2>Jamie Dimon on how to be successful</h2>
+          <div class="origin">
+            From the Course: <b>Career Advice from Some of the Biggest NAmes in Business</b>
           </div>
-
-          <!-- Explore Creative Topics 2nd column-->
-
-          <div class="footer1_link-column">
-            <h3 class="footer1_link-column__title">Explore Creative Topics</h3>
-            <ul class="footer1_link-column__list">
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> AEC </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Animation and Illustration
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Audio and Music </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Graphic Design </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Motion Graphics and VFX
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Photography </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Product and Manufacturing
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> User Experience </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Video </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Visualization and Real-Time
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Web Design </a>
-              </li>
-            </ul>
-
-            <a class="footer1_link-column__general-link"> See all </a>
-          </div>
-
-          <!-- Explore Technology Topics 3rd column-->
-
-          <div class="footer1_link-column">
-            <h3 class="footer1_link-column__title">
-              Explore Technology Topics
-            </h3>
-            <ul class="footer1_link-column__list">
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Cloud Computing </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Data Science </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Database Management </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> DevOps </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> IT Help Desk </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Mobile Development </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link">
-                  Network and System Administration
-                </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Security </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Software Development </a>
-              </li>
-              <li class="footer1_link-column__item">
-                <a class="footer1_link-column__link"> Web Development </a>
-              </li>
-            </ul>
-
-            <a class="footer1_link-column__general-link"> See all </a>
-          </div>
-        </div>
-      </section>
-
-      <div id="Directory-section">
-        <div class="directory-section-img">
-          <img class="directory-logo" src="../../static/ImageBase/Screenshot_2.jpg" alt="" />
-        </div>
-        <div class="directory-links">
-          <div class="directory-links-blocks">
-            <p class="directory-p">General</p>
-            <ul style="list-style-type: none" class="directory-a">
-              <li><a href="">Sign Up</a></li>
-              <li><a href="">Help Center</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Press</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Developers</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="directory-links">
-          <div class="directory-links-blocks">
-            <p class="directory-p">Browse LinkedIn</p>
-            <ul style="list-style-type: none" class="directory-a">
-              <li><a href="">Learning</a></li>
-              <li><a href="">Jobs</a></li>
-              <li><a href="">Salary</a></li>
-              <li><a href="">Mobile</a></li>
-              <li><a href="">Services</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="directory-links">
-          <div class="directory-links-blocks">
-            <p class="directory-p">Business Solutions</p>
-            <ul style="list-style-type: none" class="directory-a">
-              <li><a href="">Talent</a></li>
-              <li><a href="">Marketing</a></li>
-              <li><a href="">Sales</a></li>
-              <li><a href="">Learning</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="directory-links">
-          <div class="directory-links-blocks">
-            <p class="directory-p">Directories</p>
-            <ul style="list-style-type: none" class="directory-a">
-              <li><a href="">Members</a></li>
-              <li><a href="">Jobs</a></li>
-              <li><a href="">Companies</a></li>
-              <li><a href="">Salaries</a></li>
-              <li><a href="">Featured</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Interview Prep</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Schools</a></li>
-              <li><a href=""> Learning</a></li>
-              <li><a href=""> Services</a></li>
-            </ul>
+          <div class="free_trail-button">
+            <a href="/index">Start my 1-month free trail</a>
           </div>
         </div>
       </div>
-
-      <div class="footBar">
-        <div><img src="../../static/ImageBase/Screenshot_2.jpg" /></div>
-        <div>&copy;2021</div>
-        <div>About</div>
-        <div>Accessibility</div>
-        <div>User Agreement</div>
-        <div>Privacy Policy</div>
-        <div>Cookie Policy</div>
-        <div>Copyright Policy</div>
-        <div>Brand Policy</div>
-        <div>Guest Control</div>
-        <div>Community Guidelines</div>
-        <div>Language &#9660;</div>
+      <div class="post_discription">
+        <div class="post_discription-nav">
+          <div class="tab active">Transcripts</div>
+          <div class="tab">View Offline</div>
+        </div>
+        <div class="summary_tab">
+        </div>
       </div>
     </div>
-  </body>
-  <!-- <script src="./navbar.js"></script> -->
-  <!-- <script type="text/javascript" src="../../static/scripts/explore.js"></script> -->
-  <script type="text/javascript" src="../../static/scripts/course.js"></script>
-  <!-- <script type="text/javascript" src="../../static/scripts/allCoursesSort.js"></script> -->
+    <div class="main-2">
+      <h2>Contents</h2>
+      <div class="contents">
+        <div>
+          <div class="content_heading">Introduction
+            <span class="showMore">⮟</span>
+          </div>
+          <div class="showMoreContent">How to write huf jjn nof </div>
+        </div>
+        <div>
+          <div class="content_heading">1. What is Critical Thinking
+            <span class="showMore">⮟</span>
+          </div>
+          <div class="showMoreContent">How to write huf jjn nof </div>
+        </div>
+        <div>
+          <div class="content_heading">2. Thinking the problem
+            <span class="showMore">⮟</span>
+          </div>
+          <div class="showMoreContent">How to write huf jjn nof </div>
+        </div>
+        <div>
+          <div class="content_heading">3. Using Thinking the problem
+            <span class="showMore">⮟</span>
+          </div>
+          <div class="showMoreContent">How to write huf jjn nof </div>
+        </div>
+        <div>
+          <div class="content_heading">4. Practical the problem
+            <span class="showMore">⮟ </span>
+          </div>
+          <div class="showMoreContent">How to write huf jjn nof </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <section class="footer1_linkster--gray">
+      <div class="footer1_linkster__container">
+        <!-- Explore Business Topics 1st column-->
+        <div class="footer1_link-column">
+          <h3 class="footer1_link-column__title">Explore Business Topics</h3>
+          <ul class="footer1_link-column__list">
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Business Analysis and Strategy
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Business Software and Tools
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Career Development </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Customer Service </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Finance and Accounting
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Human Resources </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Leadership and Management
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Marketing </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Professional Development
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Project Management </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Sales </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Small Business and Entrepreneurship
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Training and Education
+              </a>
+            </li>
+          </ul>
+
+          <a class="footer1_link-column__general-link"> See all </a>
+        </div>
+
+        <!-- Explore Creative Topics 2nd column-->
+
+        <div class="footer1_link-column">
+          <h3 class="footer1_link-column__title">Explore Creative Topics</h3>
+          <ul class="footer1_link-column__list">
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> AEC </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Animation and Illustration
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Audio and Music </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Graphic Design </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Motion Graphics and VFX
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Photography </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Product and Manufacturing
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> User Experience </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Video </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Visualization and Real-Time
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Web Design </a>
+            </li>
+          </ul>
+
+          <a class="footer1_link-column__general-link"> See all </a>
+        </div>
+
+        <!-- Explore Technology Topics 3rd column-->
+
+        <div class="footer1_link-column">
+          <h3 class="footer1_link-column__title">
+            Explore Technology Topics
+          </h3>
+          <ul class="footer1_link-column__list">
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Cloud Computing </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Data Science </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Database Management </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> DevOps </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> IT Help Desk </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Mobile Development </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link">
+                Network and System Administration
+              </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Security </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Software Development </a>
+            </li>
+            <li class="footer1_link-column__item">
+              <a class="footer1_link-column__link"> Web Development </a>
+            </li>
+          </ul>
+
+          <a class="footer1_link-column__general-link"> See all </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="Directory-section">
+      <div class="directory-section-img">
+        <img class="directory-logo" src="../../static/ImageBase/Screenshot_2.jpg" alt="" />
+      </div>
+      <div class="directory-links">
+        <div class="directory-links-blocks">
+          <p class="directory-p">General</p>
+          <ul style="list-style-type: none" class="directory-a">
+            <li><a href="">Sign Up</a></li>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Developers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="directory-links">
+        <div class="directory-links-blocks">
+          <p class="directory-p">Browse LinkedIn</p>
+          <ul style="list-style-type: none" class="directory-a">
+            <li><a href="">Learning</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Salary</a></li>
+            <li><a href="">Mobile</a></li>
+            <li><a href="">Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="directory-links">
+        <div class="directory-links-blocks">
+          <p class="directory-p">Business Solutions</p>
+          <ul style="list-style-type: none" class="directory-a">
+            <li><a href="">Talent</a></li>
+            <li><a href="">Marketing</a></li>
+            <li><a href="">Sales</a></li>
+            <li><a href="">Learning</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="directory-links">
+        <div class="directory-links-blocks">
+          <p class="directory-p">Directories</p>
+          <ul style="list-style-type: none" class="directory-a">
+            <li><a href="">Members</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Companies</a></li>
+            <li><a href="">Salaries</a></li>
+            <li><a href="">Featured</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Interview Prep</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Schools</a></li>
+            <li><a href=""> Learning</a></li>
+            <li><a href=""> Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footBar">
+      <div><img src="../../static/ImageBase/Screenshot_2.jpg" /></div>
+      <div>&copy;2021</div>
+      <div>About</div>
+      <div>Accessibility</div>
+      <div>User Agreement</div>
+      <div>Privacy Policy</div>
+      <div>Cookie Policy</div>
+      <div>Copyright Policy</div>
+      <div>Brand Policy</div>
+      <div>Guest Control</div>
+      <div>Community Guidelines</div>
+      <div>Language &#9660;</div>
+    </div>
+  </div>
+</body>
+<!-- <script src="./navbar.js"></script> -->
+<!-- <script type="text/javascript" src="../../static/scripts/explore.js"></script> -->
+<script type="text/javascript" src="../../static/scripts/course.js"></script>
+<!-- <script type="text/javascript" src="../../static/scripts/allCoursesSort.js"></script> -->
+
 </html>
 <!-- <script>
   var name1 = document.getElementById("signIn");

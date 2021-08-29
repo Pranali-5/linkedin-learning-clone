@@ -99,8 +99,9 @@ app.get("/course", async function (req, res) {
   // const users = await courses.find({tag:`${req.query.tag}`,id:`${req.query.id}`}).lean().exec();
   //return res.json(users);
   // res.send(req.query)
-  return res.render("HTML/course")
+  return res.render("HTML/course")//,{firstName:req.query.tag+' '+req.query.id})
 });
+
 
 //sending courses data
 const courses = require("./models/courses.model.js");
