@@ -23,17 +23,11 @@ Deciding the deadline helped a l ot to build this website clone on time.
 
 We four people were i n a team. So after exploring the website and their flow we talked
 about who i s good i n what technology. “ Knowing the strengths of team members helps to
-complete the task efficiently and i n the given timeline.” We decided and divided the task
+complete the task efficiently and in the given timeline.” We decided and divided the task
 between us and we started the work right after meeting. I took two days to complete the
 task from my side. And everyone did their work on time and also before the decided time.
-It was our i nitial work that we did i n j ust two days. Then we decided to add some more
-pages to our website and some more functionality. Ankit worked very well on functionality
-of j s and also he did help me when I faced i ssues i n designing. All the team members were
-very helpful. Pranali was an awesome team member. She spent the whole day working on
-one thing to make i t perfect. Ranu always comes up with i deas l ike can we do this way or
-2
-that way. Ankit was silent and very dedicated. He did work very efficiently and also merged
-our project.
+It was our initial work that we did in just two days. Then we decided to add some more
+pages to our website and some more functionality.
 
 # Tech Stacks Used:
 ![image](https://user-images.githubusercontent.com/53153822/130080498-1434ceba-27f4-4587-96ce-b9d9a4a0d095.png)
