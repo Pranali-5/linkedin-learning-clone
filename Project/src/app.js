@@ -4,6 +4,7 @@ const app = express();
 //const ejs = require("ejs");
 const connect = require("./db/conn.js");
 const checkoutController = require("./controllers/checkout.controller");
+const joinNow = require("./controllers/joinNow.controllers");
 const Register = require("./models/registers.model.js");
 
 const port = process.env.PORT || 3000;
@@ -23,38 +24,16 @@ app.get("/signUp", async (req, res) => {
   res.render("HTML/signUp");
 });
 
-app.get(["/productsmahi1.html","/productsmahi1"], async (req, res) => {
+app.get(["/productsmahi1.html", "/productsmahi1"], async (req, res) => {
   res.render("HTML/productsmahi1");
 });
 
 //for registration
+app.use("/joinNow", joinNow);
+// app.get("/joinNow", async (req, res) => {
+//   res.render("HTML/joinNow");
+// });
 
-app.get("/joinNow", async (req, res) => {
-  res.render("HTML/joinNow");
-});
-
-app.post("/joinNow", (req, res) => {
-  try {
-    const password = req.body.password;
-    const cpassword = req.body.cpassword;
-    if (password === cpassword && (cpassword != "" || password != "")) {
-      const users = new Register({
-        firstName: req.body.firstName,
-        email: req.body.email,
-        password: password,
-        cpassword: cpassword,
-      });
-      console.log(users);
-      const reg_users = users.save();
-      res.render("HTML/signUp");
-    } else {
-
-    }
-    // res.render();
-  } catch (err) {
-    res.status(400).send(err);
-  }
-});
 var e = "";
 //for login check
 app.post("/login", async (req, res) => {
@@ -69,9 +48,7 @@ app.post("/login", async (req, res) => {
       });
     } else {
     }
-  } catch (err) {
-
-  }
+  } catch (err) {}
 });
 
 app.get("/login", async function (req, res) {
@@ -99,18 +76,18 @@ app.get("/course", async function (req, res) {
   // const users = await courses.find({tag:`${req.query.tag}`,id:`${req.query.id}`}).lean().exec();
   //return res.json(users);
   // res.send(req.query)
-  return res.render("HTML/course")//,{firstName:req.query.tag+' '+req.query.id})
+  return res.render("HTML/course"); //,{firstName:req.query.tag+' '+req.query.id})
 });
-
 
 //sending courses data
 const courses = require("./models/courses.model.js");
 
 app.get("/test", async function (req, res) {
-
-  const users = await courses.find({tag:`${req.query.tag}`}).lean().exec();
-  return res.json(users)
-
+  const users = await courses
+    .find({ tag: `${req.query.tag}` })
+    .lean()
+    .exec();
+  return res.json(users);
 });
 
 function check(useremail) {}
