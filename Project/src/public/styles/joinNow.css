@@ -32,7 +32,7 @@ body {
 
 .form-wrap {
   width: 40%;
-  height: 495px;
+  height: 530px;
   margin: auto;
   border-radius: 10px;
   display: flex;
@@ -50,7 +50,7 @@ body {
   line-height: 31.9999px;
 }
 .form-p-section {
-  margin-top: -23px !important;
+  margin-top: 5px !important;
 }
 .form-wrap p {
   color: #66666f;
@@ -71,7 +71,7 @@ body {
 }
 
 input {
-  padding: 13px 76px;
+  padding: 12px 75px;
   border-radius: 5px;
   font-size: 20px;
 }

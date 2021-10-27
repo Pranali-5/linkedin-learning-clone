@@ -103,7 +103,6 @@
         let password = document.getElementById("password").value
         let data = JSON.parse(localStorage.getItem("logindata"))
         if (data.name == name && data.password == password) {
-          console.log(data)
           window.location.href = "checkout"
         } else alert("Please Enter Right Details")
       }

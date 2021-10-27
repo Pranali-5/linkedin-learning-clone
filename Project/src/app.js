@@ -18,7 +18,7 @@ console.log(__dirname);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.get(["/index", "/index.html"], async (req, res) => {
+app.get(["/index", "/index.html", "/"], async (req, res) => {
   res.render("HTML/index");
 });
 app.get("/signUp", async (req, res) => {
@@ -52,7 +52,7 @@ app.get("/contact", async function (req, res) {
 
 app.get(["/allCourses", "/allCourses.html"], async function (req, res) {
   return res.render("HTML/allCourses", {
-    firstName: 'Hi',
+    firstName: "Hi",
   });
 });
 

@@ -7,8 +7,9 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="../../static/styles/joinNow.css"/>
     <link rel="shortcut icon" href="../../static/ImageBase/linkedin.png"/>
-    
-  </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   </head>
   <body>
     <div id="main_container">
       <header>
@@ -31,13 +32,24 @@
             <img class="form-logo" src="../../static/ImageBase/Screenshot_2.jpg" alt="" />
           </div>
           <div>
-            <h3 class="form-h1">Almost there! Sign in or create an account</h3>
+            <% if(typeof alert !='undefined' ) { %>
+              
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <%= alert%>
+                  <% %>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            
+                  <% } %>
+
+
+            <h3 class="form-h1">Almost there!
+               Sign in or create an account</h3>
           </div>
           <div class="form-p-section">
-            <p>
-              You can use the same email address and password <br /><br />
-              that you use on LinkedIn.com
-            </p>
+           
           </div>
           <div>
             <input id="name" type="text" placeholder="Name" name="firstName"/>
@@ -54,7 +66,7 @@
               type="password"
               placeholder="Confirm password"
             /><br /><br />
-            <button type="submit" id="signIn" onclick="checkoutsignIn(event)" value="text">Sign Up</button>
+            <button type="submit" id="signIn" onclick="checkoutsignIn(status)" value="text">Sign Up</button>
           </div>
           <div>
             <div class="form-new">
@@ -87,18 +99,29 @@
   </body>
 </html>
 <script>
+
   function checkoutsignIn(e) {
-    let name1= document.getElementById("name").value
-    let name = document.getElementById("name_").value
-    let password = document.getElementById("password").value
-    let confPassword = document.getElementById("confPassword").value
-    if (name && password && confPassword) {
-        let loginData={name,password}
-        if(password === confPassword){
-            alert("Account Created Sucessfully")
-        }
-        else
-        alert("Please Enter valid Details")
-    }   
+    
+//     try{
+//     let name1= document.getElementById("name").value
+//     let name = document.getElementById("name_").value
+//     let password = document.getElementById("password").value
+//     let confPassword = document.getElementById("confPassword").value;
+//     console.log("status:",e)
+//     if (name && password && confPassword) {
+//         let loginData={name,password}
+//         if(password === confPassword){
+//             alert("Account Created Sucessfully")
+//         }
+//         else{
+//         alert("Please Enter valid Details")
+//     }   
+//   }
+// } catch(error){
+//   console.log("from ejs",error)
+//     alert("Please Enter valid Details", error.message)
+// }
+
   }
+  
 </script>
