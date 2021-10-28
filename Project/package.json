@@ -16,7 +16,7 @@
     "ejs-lint": "^1.2.1",
     "express": "^4.17.1",
     "express-validator": "^6.13.0",
-    "mongoose": "^5.11.15",
+    "mongoose": "^5.13.12",
     "nodemon": "^2.0.14"
   },
   "description": ""

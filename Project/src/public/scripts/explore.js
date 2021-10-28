@@ -123,7 +123,9 @@ window.addEventListener("scroll", () => {
 });
 
 async function mainLoader(tag, appendto) {
-  let arr = await fetch(`http://localhost:3000/test/?tag=${tag}`);
+  let arr = await fetch(
+    `https://linkedin-learning-clone.herokuapp.com/test/?tag=${tag}`
+  );
   arr = await arr.json();
   appendto.innerHTML = "";
   let x;

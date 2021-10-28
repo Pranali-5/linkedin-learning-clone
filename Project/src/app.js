@@ -1,14 +1,16 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const app = express();
 // const ejs = require("ejs");
+
+const port = process.env.PORT || 3000;
 const connect = require("./db/conn.js");
 const checkoutController = require("./controllers/checkout.controller");
 const joinNow = require("./controllers/joinNow.controllers");
 const loginHandler = require("./controllers/login.controller");
 const Register = require("./models/registers.model.js");
 
-const port = process.env.PORT || 3000;
 app.use("/checkout", checkoutController);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -74,8 +76,6 @@ app.get("/test", async function (req, res) {
     .exec();
   return res.json(users);
 });
-
-function check(useremail) {}
 
 app.listen(port, async () => {
   await connect();
