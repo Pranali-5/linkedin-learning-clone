@@ -15,8 +15,7 @@ npm run server
 ```
 
 
-# LyndaClone.github.io
-# Introduction to our project(www.lynda.com clone):
+# Linkedin learning clone
 
 Linkedin has millions of users across the globe. Several posts and active users make
 linkedin very popular. So as a part of l inkdin l ynda also has millions of users. Linkedin
