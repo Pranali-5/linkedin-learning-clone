@@ -1,3 +1,20 @@
+
+# How to Run Project
+
+Clone the app
+
+```
+git clone <url>
+```
+How to run the project
+
+```
+cd Project
+npm install
+npm run server
+```
+
+
 # LyndaClone.github.io
 # Introduction to our project(www.lynda.com clone):
 
